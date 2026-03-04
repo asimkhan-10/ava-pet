@@ -1,0 +1,1 @@
+require __DIR__.'/vendor/autoload.php'; \ = require_once __DIR__.'/bootstrap/app.php'; \ = \->make(Illuminate\Contracts\Console\Kernel::class); \->bootstrap(); try { App\Models\Event::create(['title'=>'test test test 2', 'description'=>'desc', 'location'=>'loc', 'time'=>'2026-02-25T14:30']); echo 'SUCCESS'; } catch (\Exception \) { echo 'FAIL: ' . \->getMessage(); }

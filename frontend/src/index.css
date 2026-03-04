@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Set default base size */
+html {
+  font-size: 16px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.auth-background {
+  background-image: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2069&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hide scrollbar structurally while retaining scrollability on components */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
